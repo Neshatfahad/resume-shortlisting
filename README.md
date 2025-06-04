@@ -8,31 +8,31 @@ A Python-based system for automated resume parsing, semantic matching, and short
 
 D:\RSA
 │
-├── resume_folder/            # Store all candidate resumes (PDF)
-│   ├── Structured_Resume_1_Arav.pdf
-│   ├── Structured_Resume_2_Vivaan.pdf
-│   ├── Structured_Resume_3_Aditya.pdf
-│   ├── Structured_Resume_4_Krishna.pdf
-│   ├── Structured_Resume_5_Ishaan.pdf
-│   ├── Structured_Resume_6_Anaya.pdf
-│   ├── Structured_Resume_7_Diya.pdf
-│   ├── Structured_Resume_8_Myra.pdf
-│   ├── Structured_Resume_9_Ananya.pdf
-│   └── Structured_Resume_10_Kiara.pdf
+├── resume_folder/ # Store all candidate resumes (PDF)
+│ ├── Structured_Resume_1_Arav.pdf
+│ ├── Structured_Resume_2_Vivaan.pdf
+│ ├── Structured_Resume_3_Aditya.pdf
+│ ├── Structured_Resume_4_Krishna.pdf
+│ ├── Structured_Resume_5_Ishaan.pdf
+│ ├── Structured_Resume_6_Anaya.pdf
+│ ├── Structured_Resume_7_Diya.pdf
+│ ├── Structured_Resume_8_Myra.pdf
+│ ├── Structured_Resume_9_Ananya.pdf
+│ └── Structured_Resume_10_Kiara.pdf
 │
-├── resume/                   # Main code and modules
-│   ├── resume_shortlister.py
-│   ├── jd_parser_agent.py
-│   ├── pyproject.toml
-│   ├── .env
-│   ├── .python-version
-│   └── README.md
+├── resume/ # Main code and modules
+│ ├── resume_shortlister.py
+│ ├── jd_parser_agent.py
+│ ├── pyproject.toml
+│ ├── .env
+│ ├── .python-version
+│ └── README.md
 │
-├── spacyenv/                 # (env, optional)
+├── spacyenv/ # (env, optional)
 │
-├── __pycache__/              # (auto-generated)
+├── pycache/ # (auto-generated)
 │
-└── resume_results_*.xlsx     # Output Excel files with results
+└── resume_results_*.xlsx # Output Excel files with results
 
 ---
 
