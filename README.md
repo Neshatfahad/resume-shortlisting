@@ -83,14 +83,15 @@ pandas
 PyMuPDF
 groq
 python-dotenv
-🔐 Environment Variables
+
+## 🔐 Environment Variables
 Create a .env file in the resume directory:
 
 
 GROQ_API_KEY=your_groq_api_key_here
 This key is required for LLM-based parsing and justification.
 
-🚀 How It Works
+## How It Works
 Resume Parsing
 
 All PDF resumes in resume_folder are read and text is extracted using PyMuPDF.
@@ -116,17 +117,17 @@ Education Match: Semantic relevance of education section to JD.
 
 Uses a cross-encoder transformer model (cross-encoder/ms-marco-MiniLM-L-12-v2) for semantic scoring.
 
-LLM Justification
+## LLM Justification
 
 For each resume, a Groq LLM generates a justification/explanation for the match or rejection, strictly based on the JD requirements.
 
-Output
+## Output
 
 Results are saved as an Excel file (e.g., resume_results_YYYYMMDD_HHMMSS.xlsx).
 
 Each row contains: Resume name, scores, parsed fields, and justification.
 
-💻 Usage
+## Usage
 Place all resumes in the resume_folder.
 
 Run the main script:
@@ -136,7 +137,7 @@ You will be prompted (or can configure) to provide the JD text.
 
 Check the output Excel file for ranked results and explanations.
 
-🗂️ Key Files
+## Key Files
 File	Purpose
 resume_shortlister.py	Main script: parsing, scoring, shortlisting, justification
 jd_parser_agent.py	JD parsing and core skill extraction logic
@@ -144,17 +145,17 @@ jd_parser_agent.py	JD parsing and core skill extraction logic
 pyproject.toml	Python project metadata
 README.md	This documentation
 
-⚡ Customizing the Flow
+## Customizing the Flow
 Skill Extraction:
 Edit extract_core_skills_from_jd() in jd_parser_agent.py for custom JD parsing.
 
-Scoring Thresholds:
+## Scoring Thresholds:
 Adjust interpret_score() and coverage thresholds for stricter or looser shortlisting.
 
 Model Choice:
 Change MODEL_NAME in resume_shortlister.py to use different transformer models.
 
-🛠️ Troubleshooting
+## Troubleshooting
 API Key Errors:
 Ensure .env is present and GROQ_API_KEY is valid.
 
@@ -167,11 +168,11 @@ For large batches, consider batching or parallel processing.
 🚀 Extending the Project
 Add support for DOCX resumes.
 
-Integrate with HR systems (ATS).
+## Integrate with HR systems (ATS).
 
 Enhance JD/resume parsing with more advanced LLMs or custom prompts.
 
-📬 Contact
+## Contact
 For questions or contributions, contact the maintainer or open an issue.
 
 If you want, I can also help generate a ready-to-use `README.md` file you can directly commit. Would you like that?
