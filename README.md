@@ -6,6 +6,7 @@ A Python-based system for automated resume parsing, semantic matching, and short
 
 ## 📁 Project Structure
 
+D:\RSA
 │
 ├── resume_folder/ # Store all candidate resumes (PDF)
 │ ├── Structured_Resume_1_Arav.pdf
